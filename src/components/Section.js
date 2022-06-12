@@ -14,7 +14,7 @@ const Section = (props) => {
       </Fade> */}
       <ItemText>
         <h1 style={{ textTransform: 'uppercase' }}>{props.title}</h1>
-        <p>{props.description}</p>
+        <p style={{ paddingTop: '3rem' }}>{props.description}</p>
       </ItemText>
 
       <Buttons>
