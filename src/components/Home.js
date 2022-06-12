@@ -68,6 +68,5 @@ export default Home;
 
 const Container = styled.div`
   min-height: 100vh;
-  background-color: Orange;
   overflow-x: hidden;
 `;
