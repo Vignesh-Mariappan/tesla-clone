@@ -1,27 +1,34 @@
 import React from 'react';
 import styled from 'styled-components';
-import Fade from 'react-reveal/Fade';
+// install "react-reveal": "^1.2.2", for using Fade
+// import Fade from 'react-reveal/Fade';
 
 const Section = (props) => {
   return (
     <Wrap bgImage={props.backgroundImg}>
-      <Fade bottom>
+      {/* <Fade bottom>
         <ItemText>
           <h1 style={{ textTransform: 'uppercase' }}>{props.title}</h1>
           <p>{props.description}</p>
         </ItemText>
-      </Fade>
+      </Fade> */}
+      <ItemText>
+        <h1 style={{ textTransform: 'uppercase' }}>{props.title}</h1>
+        <p>{props.description}</p>
+      </ItemText>
 
-      <Fade bottom>
-        <Buttons>
-          <ButtonGroup>
-            <LeftButton>{props.leftBtnText}</LeftButton>
-            {props.rightBtnText && <RightButton>{props.rightBtnText}</RightButton>}
-          </ButtonGroup>
+      <Buttons>
+        <ButtonGroup>
+          <LeftButton>{props.leftBtnText}</LeftButton>
+          {props.rightBtnText && <RightButton>{props.rightBtnText}</RightButton>}
+        </ButtonGroup>
 
-          {props.title !== 'Accessories' && <DownArrow src='/images/down-arrow.svg' />}
-        </Buttons>
-      </Fade>
+        {props.title !== 'Accessories' && <DownArrow src='/images/down-arrow.svg' />}
+      </Buttons>
+
+      {/* <Fade bottom>
+        
+      </Fade> */}
     </Wrap>
   );
 };

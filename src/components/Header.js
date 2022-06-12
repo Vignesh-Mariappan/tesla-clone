@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import CloseIcon from '@mui/icons-material/Close';
-import Fade from 'react-reveal/Fade';
 
 const Header = () => {
   const [menuClick, setMenuClick] = useState(false);
